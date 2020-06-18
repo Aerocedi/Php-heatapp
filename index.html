@@ -27,13 +27,13 @@
 
 <body style="background-color:#002e62">
     <div class="fluid ">
-        <h1 class="text-center">CHECK THE EFFECTIVENESS OF A HEAT EXCHANGER</h1>
+        <h1 class="text-center text-white">CHECK THE EFFECTIVENESS OF A HEAT EXCHANGER</h1>
         <div class="container px-2 py-5 jum back">
             <div class="col-lg-12 col-sm-10 col-md-10 ">
 
                 <form action="calculate.php" method="post">
                     <div class="my-2">
-                        <label for="heat">Heat Exchanger Used:</label>
+                        <label for="heat" class="text-white">Heat Exchanger Used:</label>
                         <select name="heat" id="heat" class="form-control" required>
                            <option value="Parallel Flow Type">Parallel Flow Type</option>
                            <option value="Counter Flow Type">Counter Flow Type</option>
@@ -41,7 +41,7 @@
                         </select>
                     </div>
                     <div class="my-2">
-                        <label for="fluid">Type of cold fluid:</label>
+                        <label for="fluid" class="text-white">Type of cold fluid:</label>
                         <select name="fluid1" id="fluid" class="form-control" required>
                          <option value="Water">Water</option>
                         <option value="EN">Engine oil</option>
@@ -51,7 +51,7 @@
                        
                      
                      </select>
-                        <label for="fluid">Type of hot fluid:</label>
+                        <label for="fluid" class="text-white">Type of hot fluid:</label>
                         <select name="fluid2" id="fluid" class="form-control" required>
                          <option value="Water">Water</option>
                         <option value="EN">Engine oil</option>
@@ -61,33 +61,33 @@
                         </select>
                     </div>
                     <div class="my-2">
-                        <label for="Area">Surface Area in <b>M <sup>2</sup></b><b>   (A <sub>s</sub>)</b> :</label>
+                        <label for="Area" class="text-white">Surface Area in <b>M <sup>2</sup></b><b>   (A <sub>s</sub>)</b> :</label>
                         <input type="text" class="form-control" name="Area" required id="Area">
                     </div>
                     <div class="my-2">
 
-                        <label for="coefficient">Overall Heat Coefficient <b>W/M <sup>2</sup></b>K :</label>
+                        <label for="coefficient" class="text-white">Overall Heat Coefficient <b>W/M <sup>2</sup></b>K :</label>
                         <input type="text" class="form-control" name="coefficient" required id="coff">
                     </div>
-                    <h3 class="lead text-center mt-5 mb-2">COLD FLUID PARAMETERS</h3>
+                    <h3 class="lead text-center mt-5 mb-2 text-white">COLD FLUID PARAMETERS</h3>
                     <div class="mb-3">
-                        <label for="">Measured Temp. at inlet <b>(T<sub>in,c</sub>)</b> :</label>
+                        <label for="" class="text-white">Measured Temp. at inlet <b>(T<sub>in,c</sub>)</b> :</label>
                         <input type="text" name="tcin" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="mc">Mass Flow rate <b>(Kg/s)</b> :</label>
+                        <label for="mc" class="text-white">Mass Flow rate <b>(Kg/s)</b> :</label>
                         <input type="text" name="mc" class="form-control" required>
                     </div>
 
                     <h3 class="lead text-center mt-5 mb-2">HOT FLUID PARAMETERS</h3>
                     <div class="mb-3">
-                        <label for="">Measured Temp. at inlet <b>(T<sub>in,h</sub>)</b> :</label>
+                        <label for="" class="text-white">Measured Temp. at inlet <b>(T<sub>in,h</sub>)</b> :</label>
                         <input type="text" name="thin" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="">Mass Flow rate <b>(Kg/s)</b> :</label>
+                        <label for="" class="text-white">Mass Flow rate <b>(Kg/s)</b> :</label>
                         <input type="text" name="mh" class="form-control" required id="mh">
                     </div>
                     <center>
