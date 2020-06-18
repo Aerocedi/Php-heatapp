@@ -1,0 +1,108 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial=1,shrink-to-fit=no" />
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Heat_Exchanger Calaculator.php</title>
+
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="Pub_code/bootstrap/css/bootstrap.css.map">
+    <link rel="stylesheet" href="Pub_code/style.css">
+    <link rel="stylesheet" href="Pub_code/font-css/font-awesome.min.css">
+    <link rel="icon" href="heat.jpg">
+    <script src="Pub_code/jquery-3.2.1.min.js"></script>
+</head>
+
+<body style="background-color:#002e62">
+    <div class="fluid ">
+        <h1 class="text-center">CHECK THE EFFECTIVENESS OF A HEAT EXCHANGER</h1>
+        <div class="container px-2 py-5 jum back">
+            <div class="col-lg-12 col-sm-10 col-md-10 ">
+
+                <form action="calculate.php" method="post">
+                    <div class="my-2">
+                        <label for="heat">Heat Exchanger Used:</label>
+                        <select name="heat" id="heat" class="form-control" required>
+                           <option value="Parallel Flow Type">Parallel Flow Type</option>
+                           <option value="Counter Flow Type">Counter Flow Type</option>
+                     
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <label for="fluid">Type of cold fluid:</label>
+                        <select name="fluid1" id="fluid" class="form-control" required>
+                         <option value="Water">Water</option>
+                        <option value="EN">Engine oil</option>
+                         <option value="GL">Glycerin</option>
+                        <option value="ethal">Ethyl alcohol</option>
+                         <option value="AM">Ammonia</option>
+                       
+                     
+                     </select>
+                        <label for="fluid">Type of hot fluid:</label>
+                        <select name="fluid2" id="fluid" class="form-control" required>
+                         <option value="Water">Water</option>
+                        <option value="EN">Engine oil</option>
+                         <option value="GL">Glycerin</option>
+                        <option value="ethal">Ethyl alcohol</option>
+                         <option value="AM">Ammonia</option>
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <label for="Area">Surface Area in <b>M <sup>2</sup></b><b>   (A <sub>s</sub>)</b> :</label>
+                        <input type="text" class="form-control" name="Area" required id="Area">
+                    </div>
+                    <div class="my-2">
+
+                        <label for="coefficient">Overall Heat Coefficient <b>W/M <sup>2</sup></b>K :</label>
+                        <input type="text" class="form-control" name="coefficient" required id="coff">
+                    </div>
+                    <h3 class="lead text-center mt-5 mb-2">COLD FLUID PARAMETERS</h3>
+                    <div class="mb-3">
+                        <label for="">Measured Temp. at inlet <b>(T<sub>in,c</sub>)</b> :</label>
+                        <input type="text" name="tcin" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mc">Mass Flow rate <b>(Kg/s)</b> :</label>
+                        <input type="text" name="mc" class="form-control" required>
+                    </div>
+
+                    <h3 class="lead text-center mt-5 mb-2">HOT FLUID PARAMETERS</h3>
+                    <div class="mb-3">
+                        <label for="">Measured Temp. at inlet <b>(T<sub>in,h</sub>)</b> :</label>
+                        <input type="text" name="thin" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="">Mass Flow rate <b>(Kg/s)</b> :</label>
+                        <input type="text" name="mh" class="form-control" required id="mh">
+                    </div>
+                    <center>
+                        <button class="btn btn-outline-info btn-md col-lg-6 col-sm-10 col-md-10 text-center ml-1 py-3  " name="submit " type="submit"><i class="fa fa-spinner"></i><strong>  Evaluate</strong></button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!--<script src="Pub_code/heat_me.js" type="text/javascript"></script>-->
+<script src="Pub_code/bootstrap/js/bootstrap.min.js "></script>
+<script src="Pub_code/bootstrap/js/bootstrap.js "></script>
+
+</html>

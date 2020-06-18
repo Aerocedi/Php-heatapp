@@ -1,0 +1,34 @@
+@media screen and (max-width:550px) {
+    body,
+    {
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    h4 {
+        color: white;
+        background-color: #002e62;
+        text-shadow: 2px 1px 2px #000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 100%;
+    }
+}
+
+img {
+    border-radius: 5rem;
+}
+
+p {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+h4 {
+    color: white;
+    background-color: #002e62;
+    text-shadow: 2px 1px 2px #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

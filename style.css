@@ -1,0 +1,41 @@
+.back {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    color: ghostwhite;
+}
+
+.jum {
+    border: 5px solid white;
+}
+
+select,
+option {
+    background-color: #fff;
+    color: #002e62;
+}
+
+h3 {
+    border: 1px solid white;
+    background-color: #002e62;
+}
+
+p {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid white;
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 150%;
+    }
+}
